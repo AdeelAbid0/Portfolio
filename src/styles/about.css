@@ -1,0 +1,409 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80rem;
+  border-bottom: 0.2rem solid black;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/about.jpg");
+  background-size: cover;
+}
+.about .aboutchild1 {
+  padding-top: 10rem;
+
+  padding: 10rem 0rem 0rem 10rem;
+}
+.aboutchild2 .img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.about .aboutchild2 .img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.about .aboutchild2 {
+  padding-top: 5rem;
+}
+
+.aboutchild1 h1 {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.aboutchild1 p {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 3rem;
+  padding-left: 4.4rem;
+}
+.aboutchild1 h3 {
+  padding-left: 4.4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.aboutchild1 ul {
+  padding-left: 6.4rem;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+.about .aboutchild1 label {
+  color: white;
+  padding-left: 7rem;
+  font-size: 2.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+label :hover {
+  cursor: pointer;
+}
+.btncv {
+  width: 17rem;
+  height: 6rem;
+  background-color: rgb(254, 201, 28);
+  font-family: montserrat;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+  color: rgb(37, 38, 42);
+  border-radius: 1rem;
+  border: none;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.about .aboutchild2 {
+  padding-left: 10rem;
+  padding-top: 15rem;
+}
+
+/* PROFESSIONAL SKILLS */
+
+.skill {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+  grid-template-rows: 20rem 20rem;
+  justify-content: center;
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  background-color: #25262a;
+  padding-top: 0rem;
+  height: 80rem;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/skills.jpg");
+  background-size: cover;
+}
+.skill :hover .image {
+  transition: 0.2s ease;
+  opacity: 0;
+}
+.skill :hover .overlay {
+  font-size: 4.6rem;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: bold;
+  margin-top: -9rem;
+  text-align: center;
+  margin-left: -7rem;
+}
+.skill .skillsimage {
+  margin-left: -55rem;
+  opacity: 0.1;
+}
+.skill h1 {
+  color: white;
+  margin: 10rem 0rem 0rem 35rem;
+  font-size: 5.2rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.skill1 {
+  grid-column: 1/2;
+  position: relative;
+  opacity: 0;
+}
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6 {
+  border-radius: 3rem;
+  padding: 5rem 0rem 0rem 7rem;
+  height: 20rem;
+  background-color: #2e2e31;
+  opacity: 0.9;
+  border: 0.2rem solid black;
+  box-shadow: 1rem 1rem 1.5rem 1.5rem #000000;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+:hover {
+  cursor: pointer;
+}
+@media (max-width: 1120px) {
+  .aboutchild1,
+  h1,
+  p,
+  h3,
+  label {
+    margin-left: -5rem;
+  }
+  .aboutchild2 .img {
+    margin-left: -7rem;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+  .aboutchild2 .img {
+    margin-top: -10rem;
+  }
+  .skill :hover .overlay {
+    font-size: 3.4rem;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-weight: bold;
+    margin-top: -10rem;
+    text-align: center;
+    padding-left: 0rem;
+    margin-left: -7rem;
+  }
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 60%;
+  }
+  .about {
+    display: block;
+  }
+
+  .aboutchild1 h3,
+  label {
+    margin-left: 10rem;
+  }
+  .aboutchild2 .img {
+    margin-left: 22rem;
+  }
+}
+@media (max-width: 870px) {
+  .aboutchild2 .img {
+    margin-left: 13rem;
+  }
+  .aboutchild1 h3,
+  label {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 710px) {
+  .aboutchild2 .img {
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 640px) {
+  .aboutchild2 .img {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 588px) {
+  .aboutchild2 .img {
+    margin-left: -3rem;
+  }
+}
+@media (max-width: 530px) {
+  .aboutchild2 .img {
+    margin-left: -7rem;
+  }
+}
+@media (max-width: 480px) {
+  .aboutchild2 .img {
+    margin-left: 0rem;
+    width: 40rem;
+    height: 40rem;
+  }
+}
+@media (max-width: 450px) {
+  .skill :hover .overlay {
+    font-size: 3.4rem;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-weight: bold;
+    margin-top: -8rem;
+    text-align: center;
+    padding-left: 3rem;
+    margin-left: -7rem;
+  }
+}
+@media (max-width: 440px) {
+  .aboutchild2 .img {
+    margin-left: -5rem;
+  }
+  .aboutchild1 p {
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 350px) {
+  .aboutchild1 h1 {
+    padding-top: 0rem;
+  }
+  .aboutchild2 .img {
+    width: 25rem;
+    height: 25rem;
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 340px) {
+  .skill :hover .overlay {
+    font-size: 3.2rem;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-weight: bold;
+    margin-top: -8rem;
+    text-align: center;
+    padding-left: 4rem;
+    margin-left: -7rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 370px) {
+  .aboutchild2 {
+    height: 50rem;
+  }
+  .aboutchild2 .img {
+    height: 40rem;
+    width: 40rem;
+    margin-left: -8rem;
+  }
+}
+@media (max-width: 350px) {
+  .aboutchild2 .img {
+    width: 30rem;
+    height: 30rem;
+    margin-left: -4rem;
+  }
+  .about {
+    height: 100rem;
+  }
+}
+@media (max-width: 350px) {
+  .aboutchild2 .img {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+@media (max-width: 328px) {
+  .aboutchild2 .img {
+    width: 26rem;
+    height: 26rem;
+  }
+}
+/* skills */
+@media (max-width: 670px) {
+  .skill {
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    height: 100rem;
+  }
+  .skill h1 {
+    margin-left: 20rem;
+    color: white;
+  }
+}
+@media (max-width: 450px) {
+  .skill {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    height: 100rem;
+  }
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5,
+  .skill6,
+  .image {
+    margin-left: -2rem;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 450px) {
+  .skill {
+    grid-template-columns: 18rem 18rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    height: 100rem;
+  }
+  .skill h1 {
+    margin-left: 12rem;
+  }
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5,
+  .skill6,
+  .image {
+    padding-left: 3rem;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 350px) {
+  .skill h1 {
+    margin-left: 7rem;
+  }
+  .aboutchild1 h1 {
+    margin-left: -10rem;
+  }
+}
+@media (max-width: 340px) {
+  .skill {
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    height: 100rem;
+  }
+  .skill h1 {
+    margin-left: 5rem;
+  }
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5,
+  .skill6,
+  .image {
+    padding-left: 3rem;
+    margin-top: -2rem;
+  }
+}

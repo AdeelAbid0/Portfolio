@@ -1,0 +1,304 @@
+html {
+  font-size: 62.5%;
+}
+.container2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60rem;
+  background-color: rgb(45, 46, 50);
+  padding-top: 12rem;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/contact.jpg");
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
+.c2child1 {
+  padding-left: 5rem;
+  width: 50rem;
+  margin-left: 10rem;
+}
+.c2child1 label {
+  color: greenyellow;
+  font-size: 1.8rem;
+  text-shadow: 0 0 1rem #ff0000, 0 0 1rem #0000ff;
+}
+.c2child1 h1 {
+  font-size: 4rem;
+  color: white;
+  margin-left: -0.7rem;
+  padding-left: 0.8rem;
+}
+.c2child1 p {
+  color: white;
+  font-size: 2.2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+}
+.c2child1 button {
+  background-color: #1d1d1f;
+  margin-left: -1.5rem;
+  margin-top: 3rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: none;
+  color: #64f4ab;
+}
+.c2child1 h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin-left: 1rem;
+  padding-left: 8rem;
+  margin-top: -8rem;
+}
+.c2child1 .para {
+  color: rgb(218, 218, 218);
+  font-size: 1.8rem;
+  margin-left: 9rem;
+  margin-top: -2.5rem;
+}
+.c2child1 .icon-btn1 {
+  background-color: #1d1d1f;
+  margin-left: 2rem;
+  border: none;
+  margin-top: 2rem;
+}
+.c2child1 h3 {
+  font-size: 2.8rem;
+  color: white;
+  padding-left: 12rem;
+  margin-top: -8rem;
+}
+.c2child1 .para1 {
+  color: rgb(218, 218, 218);
+  font-size: 1.8rem;
+  margin-left: 12rem;
+  margin-top: -2.5rem;
+}
+.c2child2 {
+  padding-left: 3rem;
+  margin-top: 8rem;
+  width: 65rem;
+}
+
+.c2child2 input {
+  color: white;
+}
+.c2child2 ::placeholder {
+  color: white;
+}
+.c2child2 .email {
+  width: 22rem;
+  height: 5.5rem;
+  border: 0.1rem solid #64f4ab;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #1d1d1f;
+  font-size: 1.8rem;
+  margin-left: 0.8rem;
+  cursor: auto;
+}
+.c2child2 .email {
+  color: white;
+}
+.c2child2 .name {
+  width: 22rem;
+  height: 5.5rem;
+  border: 0.1rem solid #64f4ab;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #1d1d1f;
+  font-size: 1.8rem;
+  cursor: auto;
+}
+.c2child2 textarea {
+  margin-top: 1.5rem;
+  width: 45rem;
+  border: 0.1rem solid #64f4ab;
+  background-color: #1d1d1f;
+  border-radius: 1rem;
+  color: white;
+  cursor: auto;
+  height: 23rem;
+  font-size: 2rem;
+}
+.c2child2 textarea::placeholder {
+  padding-left: 2.5rem;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.c2child2 button {
+  background-color: #fec91c;
+  border-radius: 1.5rem;
+  height: 5rem;
+  width: 15rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  margin-left: -30rem;
+  margin-top: 28rem;
+  position: absolute;
+  border: 0.2rem solid black;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+  .container2 {
+    display: block;
+    height: 110rem;
+  }
+  .c2child1,
+  .c2child2 {
+    margin-left: 30rem;
+  }
+  .c2child1 h3 {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 30%;
+  }
+  .c2child1,
+  .c2child2 {
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 670px) {
+  .c2child1,
+  .c2child2 {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 630px) {
+  .c2child1,
+  .c2child2 {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 590px) {
+  .c2child1,
+  .c2child2 {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 560px) {
+  .c2child1,
+  .c2child2 {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .container2 {
+    height: 120rem;
+  }
+  .c2child1 {
+    width: 40rem;
+  }
+  .c2child1 p {
+    padding-left: 5rem;
+  }
+  .c2child2 {
+    width: 40rem;
+  }
+  .c2child2 .name {
+    margin-left: 15rem;
+  }
+  .c2child2 .email {
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+  }
+  .c2child2 textarea {
+    margin-left: 11rem;
+    width: 30rem;
+    height: 13rem;
+  }
+  .c2child2 .btn1 {
+    margin-top: 2rem;
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 430px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 50rem;
+    grid-template-rows: 55rem 45rem;
+  }
+  .c2child2 .name {
+    margin-left: 10rem;
+  }
+  .c2child2 .email {
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+  }
+  .c2child2 textarea {
+    margin-left: 6rem;
+    width: 30rem;
+    height: 13rem;
+  }
+  .c2child2 .btn1 {
+    margin-top: 17rem;
+    margin-left: -22rem;
+  }
+}
+@media (max-width: 400px) {
+  .container2 .c2child1 {
+    padding-top: 5rem;
+  }
+  .c2child2 .name {
+    margin-left: 7rem;
+  }
+  .c2child2 .email {
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+  }
+  .c2child2 textarea {
+    margin-left: 4rem;
+    width: 30rem;
+    height: 13rem;
+  }
+  .c2child2 .btn1 {
+    margin-top: 17rem;
+    margin-left: -22rem;
+  }
+}
+@media (max-width: 400px) {
+  .container2 {
+    padding-top: 5rem;
+  }
+  .c2child1 .para {
+    margin-left: 5rem;
+  }
+  .c2child1 p {
+    padding-right: 10rem;
+  }
+  .c2child1 .para1 {
+    margin-left: 7rem;
+  }
+  .c2child2 {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 350px) {
+  .container2 {
+    padding-top: 15rem;
+  }
+}
+@media (max-width: 340px) {
+  .c2child1 .para {
+    margin-left: 5rem;
+  }
+  .c2child1 p {
+    padding-right: 10rem;
+  }
+  .c2child1 .para1 {
+    margin-left: 7rem;
+  }
+}

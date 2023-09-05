@@ -1,0 +1,185 @@
+html {
+  font-size: 62.5%;
+}
+
+.projdesc {
+  display: grid;
+  grid-template-columns: 70rem;
+  grid-template-rows: 10rem 45rem 85rem;
+  background-color: #25262a;
+  justify-content: center;
+  height: 170rem;
+  padding-top: 10rem;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/about.jpg");
+  background-size: cover;
+}
+.projtitle {
+  background-color: #2d2e32;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+}
+.projtitle h1 {
+  font-size: 4.6rem;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #5342ac;
+  }
+  to {
+    text-shadow: 0rem 0rem 3rem #fff, 0rem 0rem 3rem #5342ac;
+  }
+}
+.projimages {
+  background-color: #2d2e32;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+}
+.projexp {
+  background-color: #2d2e32;
+  padding-left: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+}
+.projexp h1,
+h2,
+h3 {
+  font-size: 3.2rem;
+  color: white;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0rem 0rem 1rem #0afa66, 0rem 0rem 1rem #eaee06;
+  }
+  to {
+    text-shadow: 0rem 0rem 3rem #0afa66, 0rem 0rem 3rem #eaee06;
+  }
+}
+.projexp p {
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.projexp ul {
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 5rem;
+}
+.projexp a {
+  font-size: 2.6rem;
+}
+.projexp button {
+  width: 15rem;
+  height: 6rem;
+  background-color: rgb(254, 201, 28);
+  font-family: montserrat;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+  color: rgb(37, 38, 42);
+  border-radius: 1rem;
+  border: none;
+  margin-top: 4rem;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20rem;
+}
+@media (max-width: 1120px) {
+  .projexp h1 {
+    padding-left: 5rem;
+  }
+  .projexp h2 {
+    padding-left: 0rem;
+  }
+  .projexp h3 {
+    padding-left: 5rem;
+  }
+  .projexp p {
+    padding-left: 5rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 570px) {
+  .projdesc {
+    grid-template-columns: 50rem;
+    grid-template-rows: 10rem 35rem 95rem;
+  }
+  .projimages {
+    padding-top: 3rem;
+  }
+  .projdesc h1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .projdesc h2 {
+    padding-left: 0rem;
+  }
+  .projdesc h3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .projdesc p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .projdesc a {
+    font-size: 2rem;
+    margin-left: -2rem;
+  }
+  .projdesc button {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 420px) {
+  .projdesc {
+    grid-template-columns: 35rem;
+    grid-template-rows: 15rem 25rem 120rem;
+  }
+  .projdesc h2 {
+    margin-left: -3rem;
+  }
+
+  .projtitle h1 {
+    font-size: 4.2rem;
+    padding-left: 6rem;
+  }
+  .projexp h1 {
+    font-size: 3rem;
+  }
+  .projexp h2 {
+    font-size: 3rem;
+  }
+  .projexp h3 {
+    font-size: 3rem;
+  }
+  .projdesc button {
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+}

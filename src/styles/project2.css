@@ -1,0 +1,194 @@
+html {
+  font-size: 62.5%;
+}
+
+.proj2desc {
+  display: grid;
+  grid-template-columns: 70rem;
+  grid-template-rows: 10rem 45rem 115rem;
+  background-color: #25262a;
+  justify-content: center;
+  height: 190rem;
+  padding-top: 10rem;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/about.jpg");
+  background-size: cover;
+}
+.proj2title {
+  background-color: #2d2e32;
+  border-bottom: 0.2rem solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #5342ac;
+  }
+  to {
+    text-shadow: 0rem 0rem 3rem #fff, 0rem 0rem 3rem #5342ac;
+  }
+}
+.proj2title h1 {
+  font-size: 4.6rem;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+}
+.proj2images {
+  background-color: #2d2e32;
+  border-bottom: 0.2rem solid black;
+  padding-top: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+}
+.proj2exp {
+  background-color: #2d2e32;
+  padding-left: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/project3.jpg");
+  background-size: cover;
+}
+.proj2exp h1,
+h2 {
+  font-size: 3.2rem;
+  color: white;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #5342ac;
+  }
+  to {
+    text-shadow: 0rem 0rem 3rem #fff, 0rem 0rem 3rem #5342ac;
+  }
+}
+.proj2exp p {
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.proj2exp ul {
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 5rem;
+}
+.proj2exp a {
+  font-size: 2.6rem;
+}
+.proj2exp button {
+  width: 15rem;
+  height: 6rem;
+  background-color: rgb(254, 201, 28);
+  font-family: montserrat;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+  color: rgb(37, 38, 42);
+  border-radius: 1rem;
+  border: none;
+  margin-top: 4rem;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20rem;
+}
+@media (max-width: 1120px) {
+  .proj2exp h1 {
+    padding-left: 5rem;
+  }
+  .proj2exp h2 {
+    padding-left: 0rem;
+  }
+  .proj2exp h3 {
+    padding-left: 5rem;
+  }
+  .proj2exp p {
+    padding-left: 5rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 570px) {
+  .proj2desc {
+    grid-template-columns: 50rem;
+    grid-template-rows: 15rem 35rem 130rem;
+  }
+  .proj2images {
+    padding-top: 3rem;
+  }
+  .proj2desc h1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .proj2desc h2 {
+    padding-left: 0rem;
+  }
+  .proj2desc h3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .proj2desc p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .proj2desc a {
+    font-size: 2rem;
+    margin-left: -2rem;
+  }
+  .proj2desc button {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 420px) {
+  .proj2desc {
+    margin-top: -5rem;
+  }
+  .proj2title h1 {
+    font-size: 4rem;
+    padding-left: 7rem;
+  }
+  .proj2desc {
+    grid-template-columns: 40rem;
+    grid-template-rows: 12rem 24rem 144rem;
+  }
+  .proj2desc h2 {
+    margin-left: -3rem;
+  }
+  .proj2desc button {
+    margin-left: 9rem;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 330px) {
+  .proj2desc {
+    grid-template-columns: 38rem;
+    grid-template-rows: 12rem 24rem 143rem;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 25%;
+  }
+}
